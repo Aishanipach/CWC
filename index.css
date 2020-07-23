@@ -4,88 +4,129 @@
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  left: 70px;
-  background-color: #111; /* Black*/
+  left: 50px;
+  background-color: rgb(36, 34, 34); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-/* The navigation menu links */
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-   ;
+   font-family: sans-serif;
   font-size: 8px;
   color: white;
   display: block;
   transition: 0.3s;
 }
 
-/*When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
   color: #3a62e4;
   background-color:rgb(66, 66, 70);
 }
-/*
 
-.sidenav .closebtn {
-  position: absolute;
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-*/
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
+  height:100%;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
 
-/* For the animated hamburger menu */
+
 .container {
   display: inline-block;
   cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 10 px;
-  height: 0.5 px;
+  width: 10px;
+  height: 0.5px;
   background-color: #3a62e4;
-  margin: 4 px 0;
-  transition: 0.4 s;
+  margin: 4px 7px;
+  transition: 0.4s;
 }
 
-/* Rotate first bar */
+
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(3px, 4px) ;
-  transform: rotate(-45deg) translate(3px, 4px) ;
+  -webkit-transform: rotate(-45deg) translate(10px, 14px) ;
+  transform: rotate(-45deg) translate(-3px, 4px) ;
 }
 
-/* Fade out the second bar */
+
 .change .bar2 {
   opacity: 0;
 }
 
-/* Rotate last bar */
+
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-1px, -4px) ;
 }
 
 .tab {
   float: left;
-  border: 0px solid #2A2A2E;
+  border: 0;
   background-color: #2A2A2E;
-  width: 5%;
+  position: fixed;
+  width: 3%;
   height: 100%;
+}
+
+.icon-bar {
+  position: fixed;
+  bottom: 0px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.icon-bar a {
+  display: block;
+  position: sticky;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 6px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 10px;
+  bottom:0;
+}
+
+
+.icon-bar a:hover {
+  background-color: #000;
+  
+}
+
+.facebook {
+  background: #2A2A2E;
+ 
+  color: white;
+}
+
+.twitter {
+  background: #2A2A2E;
+  color: white;
+}
+
+.linkedin {
+  background: #2A2A2E;
+  color: white;
+}
+
+.youtube {
+  background: #2A2A2E;
+  color: white;
 }
